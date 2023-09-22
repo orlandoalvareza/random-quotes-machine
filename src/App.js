@@ -57,7 +57,16 @@ const quoteData = [
 function App() {
   return (
     <div className="App">
-      
+      <div id="quote-box">
+        <p id="text">text</p>
+        <span id="author">author</span>
+        <div className="click-actions">
+          <button id="new-quote">
+            New Quote
+          </button>
+          <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank">icon</a>
+        </div>
+      </div>
     </div>
   );
 }
