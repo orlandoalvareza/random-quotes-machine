@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import quoteData from './quote-data';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -23,7 +24,7 @@ function App() {
           <button id="new-quote" onClick={changeQuoteHandler}>
             New Quote
           </button>
-          <a id="tweet-quote" href="twitter.com/intent/tweet" target="_blank">
+          <a id="tweet-quote" href="https://twitter.com" rel="noreferrer" target="_blank">
             <FontAwesomeIcon
               style={{ fontSize: '2.2rem', color: '#3F72AF' }}
               icon={faTwitter}

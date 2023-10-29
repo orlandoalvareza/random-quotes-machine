@@ -4,17 +4,10 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100%;
-  height: 100vh;
+.App {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.App {
-  display: grid;
-  place-content: center;
   background: linear-gradient(to bottom, #d2e4f1, #d6e6f2 100%);
   width: 100vw;
   height: 100vh;
@@ -138,5 +131,25 @@ body {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 480px) {  
+  #quote-box {
+    width: 340px;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {  
+  #quote-box {
+    width: 390px;
+    padding: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #quote-box {
+    width: 600px;
   }
 }
